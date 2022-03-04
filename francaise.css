@@ -35,13 +35,25 @@ li{
     header {
        
         margin-top: 10px;
-        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 5px;
     }
 
 
     #logo_accueil{
         height: 30px;
       
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+
+    .fleche{
+        margin-right: 80px;
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 20px;
+        
     }
 
     /* Fin headeur */
@@ -167,7 +179,37 @@ li{
 
 
 
-       /* le before marche*/
+    /* coeur */
+    
+
+
+    .coeur{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        font-size: 28px;
+        color: black;
+     
+
+    }
+
+    .coeur_plein{
+        position: absolute;
+        color: transparent;
+        -webkit-background-clip: text;
+        
+    }
+
+
+
+    .coeur:hover .coeur_plein{
+        animation: coeur_change 450ms ease forwards;
+     
+    }
+
+
+    /* fin coeur */
+
 
     /*
     .aligne_menu_prix::after{
@@ -386,5 +428,19 @@ li{
         opacity: 1;
         transform: translate(0,-10%);
     }
+    
+}
+
+@keyframes coeur_change {
+    0%{
+      
+       color: white;
+    }
+    100%{
+  
+        background-image: linear-gradient(90deg, rgba(153,226,208,1) 0%, rgba(255,121,218,1) 35%, rgba(147,86,220,1) 100%);
+
+    }
+
     
 }
