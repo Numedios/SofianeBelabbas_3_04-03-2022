@@ -29,6 +29,11 @@ li{
 @media screen and (max-width: 1200px)
 {
 
+    /* Loadeur*/
+
+
+    /*fin Loadeur */
+
     /* Headeur */
     header {
         text-align: center;
@@ -41,11 +46,13 @@ li{
     #logo_accueil{
        height: 25px;
        margin-bottom: 10px;
+       
     }
 
     /* Fin headeur */
 
     .fa-location-dot{
+      
         height: 20px;
         width: 20px;
     }
@@ -59,6 +66,7 @@ li{
         justify-content: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        
     }
 
     .description_header{
