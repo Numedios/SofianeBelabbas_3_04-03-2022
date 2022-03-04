@@ -76,20 +76,32 @@ li{
         margin-top: 10px;
     }
 
+  
+
     button{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: blueviolet;
+    
+        background-image:  linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
         color: white; 
         height: 35px ;
         width: 55%;
         margin: 0px auto;
         padding: 20px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
         border: none;
         border-radius: 25px;
+       
+        
+    }
+
+    button:hover{
+        background-image: linear-gradient(90deg, rgba(147,86,220,1) 0%,rgba(147,86,220,1) 100% );
+        box-shadow: 0.5rem 0.5rem 10px rgb(0 0 0 / 25%);
+        animation: all 2s ease forwards ;
+
     }
 
 
