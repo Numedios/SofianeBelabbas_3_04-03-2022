@@ -255,7 +255,7 @@ li{
 
     .scrol_icon{
         content: "";
-        background-color:  #99E2D0;
+        background-color:  #99e2d0;
         width: 0px;
         display: flex;
         justify-content: center;
@@ -365,7 +365,10 @@ li{
         margin-bottom: 100px;
         margin-top: 25px;
    
+   
     }
+
+
 
 /* fin btn */
 
@@ -385,11 +388,14 @@ li{
     }
 
 
+
+    
     .footer_logo{
-        height: 25px;
         margin-bottom: 20px;
         margin-top: 10px;
         color: white;
+        font-size: 20px;
+        font-family: Shrikhand;
         
     }
 
