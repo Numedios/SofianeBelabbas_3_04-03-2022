@@ -203,7 +203,7 @@ li{
 
 
     .coeur:hover .coeur_plein{
-        animation: coeur_change 450ms ease forwards;
+        animation: coeur_change 500ms ease forwards;
      
     }
 
@@ -211,45 +211,6 @@ li{
     /* fin coeur */
 
 
-    /*
-    .aligne_menu_prix::after{
-        font-family: 'Font Awesome 5 Free'; 
-        content: "";
-        background-color: #99E2D0;
-        height: 100%;
-        width: 0px;
-        transition:  all 1s ease;
-        
-            
-   
-    }
-    
-    .aligne_menu_prix:hover::after{
-        width: 25%;  
-     
-       
-    }
-
-    .icon::after{
-        font-family: 'Font Awesome 5 Free'; 
-        content: "\f058";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 30px;
-        writing-mode: horizontal-tb;
-      
-     
-    }   
-    .icon:hover::after{
-      
-        transition: all 2s ease;
-      
-
-    }
-    */
-    /* fin du before marche*/
 
     /* animation scrol */ 
 
@@ -284,7 +245,6 @@ li{
     }
 
     /* fin animation scrol*/
-
 
 
     /*  delai apparition*/
@@ -445,10 +405,10 @@ li{
 @keyframes coeur_change {
     0%{
       
-       color: white;
+      opacity: 0;
     }
     100%{
-  
+        opacity: 1;
         background-image: linear-gradient(90deg, rgba(153,226,208,1) 0%, rgba(255,121,218,1) 35%, rgba(147,86,220,1) 100%);
 
     }
