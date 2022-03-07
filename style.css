@@ -28,10 +28,74 @@ li{
 
 @media screen and (max-width: 1200px)
 {
+    main{
+        opacity: 0;
+        animation: main_opacity 4s ease 2s forwards;
+    }
+
+    @keyframes main_opacity {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
 
     /* Loadeur*/
+    
+     
+    .loadeur_animation{
+        width: 70%;
+        height: 5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: black 1px solid;
+        animation: loadeur_disparition 1s ease 2s forwards;
+        
+
+       
+    }
+
+    .loadeur_barre{
+        background-image: linear-gradient(90deg, rgba(153,226,208,1) 0%, rgba(255,121,218,1) 35%, rgba(147,86,220,1) 100%);
+       
+        height: 100%;
+        width: 0%;
+        animation: loadeur 1500ms ease-in-out forwards;
+        
+    }
 
 
+    
+
+
+    @keyframes loadeur {
+        0%{
+            width: 0%;
+        }
+
+        100%{
+           width: 100%;
+        }
+        
+    }
+
+    @keyframes loadeur_disparition {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+        
+    }
+
+    
+    
     /*fin Loadeur */
 
     /* Headeur */
