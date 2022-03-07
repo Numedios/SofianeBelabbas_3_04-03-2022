@@ -22,6 +22,11 @@ p,h2,ul , li , h5{
     
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 li{
     list-style: none;
 }
@@ -54,7 +59,7 @@ li{
         left: 50%;
         transform: translate(-50%,-50%);
         border: black 1px solid;
-        animation: loadeur_disparition 1s ease 2s forwards;
+        animation: loadeur_disparition 1s ease 1s forwards;
         
 
        
@@ -65,7 +70,7 @@ li{
        
         height: 100%;
         width: 0%;
-        animation: loadeur 1500ms ease-in-out forwards;
+        animation: loadeur 1300ms ease-in-out forwards;
         
     }
 

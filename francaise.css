@@ -23,6 +23,11 @@ p,h2,ul , li , h5{
     
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 li{
     list-style: none;
 }
