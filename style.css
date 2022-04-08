@@ -31,26 +31,23 @@ li{
     list-style: none;
 }
 
-@media screen and (max-width: 1200px)
-{
-    main{
+main{
+    opacity: 0; 
+    animation: main_opacity 4s ease 2s forwards;
+}
+
+@keyframes main_opacity {
+    0%{
         opacity: 0;
-        animation: main_opacity 4s ease 2s forwards;
     }
-
-    @keyframes main_opacity {
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-        
+    100%{
+        opacity: 1;
     }
+}
 
-    /* Loadeur*/
-    
-     
+
+/* Loadeur*/
+
     .loadeur_animation{
         width: 70%;
         height: 5%;
@@ -75,9 +72,6 @@ li{
     }
 
 
-    
-
-
     @keyframes loadeur {
         0%{
             width: 0%;
@@ -99,9 +93,9 @@ li{
         
     }
 
-    
-    
-    /*fin Loadeur */
+/* Fin Loadeur*/
+
+
 
     /* Headeur */
     header {
@@ -111,23 +105,15 @@ li{
         justify-content: center;
     }
 
-
+    
     #logo_accueil{
-       height: 25px;
-       margin-bottom: 10px;
-       
-    }
-
-    /* Fin headeur */
-
-    .fa-location-dot{
-      
-        height: 20px;
-        width: 20px;
+        height: 80px;
+        margin-bottom: 10px;    
     }
 
 
-/* Localisation */
+
+    /* Localisation */
 
     .localisation{
         background-color: #f3f3f3;
@@ -135,8 +121,16 @@ li{
         justify-content: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        align-items: center;
         
     }
+
+    .localisation > p{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+
+
 
     .description_header{
         display: flex;
@@ -148,7 +142,7 @@ li{
     }
 
     .description_header > p{
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 20px;
         margin-top: 10px;
     }
@@ -159,7 +153,6 @@ li{
         display: flex;
         justify-content: center;
         align-items: center;
-    
         background-image:  linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
         color: white; 
         height: 35px ;
@@ -186,80 +179,86 @@ li{
 
 /* Début Fonctionnement */
 
-    #fonctionnement{
-        display: flex;
-        flex-direction: column;
-    }
+#fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .titre_section{
-        margin-left: 1em;
-    }
+.titre_section{
+    margin-left: 1em;
+}
 
-    #fonctionnement > ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: max-content;
-    }
+#fonctionnement > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: max-content;
+}
 
-    .aligne_fonctionnement{ /* aligne et gere le style*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px ;
-        box-shadow: 0 0 7px #c1c1c1;
-        padding: 15px;
-        border-radius: 11px;
-        width: 80%;
-        
-        position: relative;
-        
-    }
+.aligne_fonctionnement{ /* aligne et gere le style*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px ;
+    box-shadow: 0 0 7px #c1c1c1;
+    padding: 15px;
+    border-radius: 11px;
+    width: 80%;
     
-    .chiffre_fonctionnement{
-        background-color: #9356DC;;
-        color: white;
-        font-family: Roboto;
-        font-size: 12px;
-        height: 20px;
-        width: 20px;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left:-7px;  /* a definir */
-       
+    position: relative;
+    
+}
+
+.chiffre_fonctionnement{
+    background-color: #9356DC;;
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:-7px;  /* a definir */
+   
 
 
-    }
+}
 
-    .aligne_fonctionnement > i{
-        color: #FF79DA;
-       padding-left: 5px;
-        padding-right: 25px;
-        width: 20px;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        
-        
-    }
+.aligne_fonctionnement > i{
+    color: #FF79DA;
+   padding-left: 5px;
+    padding-right: 25px;
+    width: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
 
-    /* Fin Fonctionnement*/
+/* Fin Fonctionnement*/
 
     /* Restaurants */
 
     .cartes_restaurants{
         display: flex;
         align-items: center;
-        flex-direction: column;
-
+        background-color: c1c1c1;
+        height: 500px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
     }
 
     .carte_restaurant{
-        width: 80%;
-        margin-bottom: 10px;
+        width: 35%;
+          
+  
+        margin-bottom: 20px;
         border-radius: 15px;
         box-shadow: 0 0 7px #c1c1c1;
        
@@ -340,44 +339,126 @@ li{
         animation: coeur_change 450ms ease forwards;
      
     }
-
-
-
-
-
+           
     /* Footer */
+            
     footer{
-        margin-top: 30px;
+                
+        margin-top: 30px;     
         background-color: #353535;
         color: white;
     }
-
+        
     .aligne_footer{
         padding-top: 20px;
         padding-left: 20px;
         padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
     }
-
-
+    
+    .nav_footer{
+        display: flex;
+        padding-left: 10px;   
+    }       
+         
     .footer_logo{
         margin-bottom: 20px;
         margin-top: 10px;
         color: white;
         font-size: 20px;
-        font-family: Shrikhand;
-        
+        font-family: Shrikhand;         
     }
-
+        
     .lien_footer{
         padding-bottom: 8px;
         display: flex;
+        padding-left: 10px;
     }
-    
+            
     .lien_footer > i{
         padding-right: 10px;
         font-size: 15px;
         width: 15px;
+        padding-right: 10px;
     }
+        
+
+
+@media screen and (max-width: 900px)
+{
+
+    #logo_accueil{
+       height: 25px;
+       margin-bottom: 10px;
+       
+    }
+
+    /* Fin headeur */
+
+    .fa-location-dot{
+      
+        height: 20px;
+        width: 20px;
+    }
+
+
+/* Localisation */
+
+    .localisation > p{
+        font-size: 20px;
+  
+    }
+
+    .description_header > p{
+        font-size: 20px;
+ 
+    }
+
+/* Fin Localisation */
+
+
+
+    /* Restaurants */
+
+    .cartes_restaurants{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        flex-wrap: nowrap;
+       
+      
+
+    }
+
+    .carte_restaurant{
+        width: 80%;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+
+
+
+    /* Footer */
+
+
+    .aligne_footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav_footer{
+        flex-direction: column;
+    }
+
+
+    .footer_logo{
+        font-size: 20px;
+    }
+
+
 }
 
 
