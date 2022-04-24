@@ -7,13 +7,17 @@
     src: url('roboto/Roboto-Black.ttf');
 }
 
-
-
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('roboto/Roboto-Light.ttf');
+}
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+    font-weight: lighter;
 }
 
 p,h2,ul , li , h5{
@@ -31,11 +35,14 @@ li{
     list-style: none;
 }
 
-main{
-    opacity: 0; 
-    animation: main_opacity 4s ease 2s forwards;
-}
 
+
+main{
+    opacity: 1; /* changer a  0*/
+    animation: main_opacity 4s ease 2s forwards;
+    font-family: roboto;
+}
+/*
 @keyframes main_opacity {
     0%{
         opacity: 0;
@@ -44,10 +51,10 @@ main{
         opacity: 1;
     }
 }
-
+*/
 
 /* Loadeur*/
-
+/* reactivé
     .loadeur_animation{
         width: 70%;
         height: 5%;
@@ -70,6 +77,7 @@ main{
         animation: loadeur 1300ms ease-in-out forwards;
         
     }
+*/
 
 
     @keyframes loadeur {
@@ -126,7 +134,7 @@ main{
     }
 
     .localisation > p{
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 10px;
     }
 
@@ -140,9 +148,13 @@ main{
         padding: 20px 0 40px 0;
         background-color: #fafafa;
     }
-
+    .description_header > h2{
+        font-size: 20px;
+    }
     .description_header > p{
-        font-size: 30px;
+        font-family: Roboto-Light;
+        font-size: 20px;
+        font-weight: l00; /*  marche pas */ 
         margin-bottom: 20px;
         margin-top: 10px;
     }
@@ -233,11 +245,15 @@ main{
    padding-left: 5px;
     padding-right: 25px;
     width: 20px;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
-    
-    
+}
+
+.aligne_fonctionnement > p{
+    font-weight: lighter;
+    font-size: 15px;
+
 }
 
 /* Fin Fonctionnement*/
@@ -287,7 +303,10 @@ main{
         left: 70%;
         padding: 7px;
         top: 10%;
-        
+        font-family: roboto;
+        font-weight: 100; /* marche pas */
+        font-size: 14px;    
+        color: grey;
     }
 
     .carte_restaurant_description{
@@ -299,7 +318,7 @@ main{
 
 
     .carte_restaurant_nom_ville > h5{
-        font-weight: 900;
+
         font-size: 20px;
         margin-top: 7px;
         margin-bottom: 5px;
@@ -308,9 +327,9 @@ main{
 
     .carte_restaurant_nom_ville > p {
         margin-bottom: 10px;
-        font-size: 19px;
-      
-      
+        font-size: 18px;
+        font-weight: 100;
+        font-family: Roboto-Light;
     }
 
 
@@ -330,7 +349,6 @@ main{
         position: absolute;
         color: transparent;
         -webkit-background-clip: text;
-        
     }
 
 
@@ -404,17 +422,20 @@ main{
     }
 
 
+
+    /*Debut fonctionnement*/
+
+   
+
+    .titre_section{
+        margin-left: 1em;
+        align-self: flex-start;
+    }
+
+    /*Fin fonctionnement*/
 /* Localisation */
 
-    .localisation > p{
-        font-size: 20px;
-  
-    }
 
-    .description_header > p{
-        font-size: 20px;
- 
-    }
 
 /* Fin Localisation */
 
