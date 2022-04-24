@@ -3,12 +3,16 @@
     font-family: 'Shrikhand';
     src: url('shrikhand/Shrikhand-Regular.otf');
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url('roboto/Roboto-Black.ttf');
 }
 
-
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('roboto/Roboto-Light.ttf');
+}
 
 
 body{
@@ -47,7 +51,6 @@ li{
 
     #logo_accueil{
         height: 30px;
-      
         align-self: flex-start;
         justify-self: flex-start;
     }
@@ -57,7 +60,6 @@ li{
         margin-left: 5px;
         margin-top: 5px;
         font-size: 20px;
-        
     }
 
     /* Fin headeur */
@@ -70,7 +72,6 @@ li{
 
     /* Menu */
     .image_carte_menu{
-      
         position: relative;
     }
 
@@ -113,36 +114,34 @@ li{
  
     }
 
- 
-
     .aligne_menu{
         display: 	flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
+       
+        flex-direction: row;
+       
+      justify-content: space-between;
     }
 
     .aligne_menu_prix{
         display: flex;
         justify-content: space-between;
         background-color: white;
-        width: 90%;
+        width: 30%;
         margin-bottom: 15px;
         border-radius: 15px;
         box-shadow: 0 0 7px #c1c1c1; /*  changer l'ombre*/
         overflow: hidden;
-
-
     }
 
 
-    .description_menu{
-        padding: 16px;
-  
-        font-style: Roboto;
-        overflow: hidden;
+ 
 
-       
+
+    .description_menu{
+        font-family: 10px;
+        padding: 16px;
+        font-style: Roboto;
+        overflow: hidden;       
     }
 
     .description_menu > p {
@@ -150,6 +149,8 @@ li{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        font-family: Roboto-Light;
+        font-weight: 300;
     }
 
     .description_menu > h5{
@@ -170,9 +171,6 @@ li{
         font-family: Roboto;
         padding-right: 10px;
         padding-bottom: 10px;
-      
-   
-        
     }
  
     #lol{ 
@@ -182,13 +180,8 @@ li{
         overflow: hidden;
     }
 
-
-
-
     /* coeur */
     
-
-
     .coeur{
         display: flex;
         align-items: center;
@@ -205,11 +198,8 @@ li{
         -webkit-background-clip: text;
     }
 
-
-
     .coeur:hover .coeur_plein{
         animation: coeur_change 500ms ease forwards;
-     
     }
 
 
@@ -233,15 +223,11 @@ li{
 
     .aligne_menu_prix:hover .scrol_icon {
         width: 20%;
-        
-        
     }
 
     .rotate_icon{
         transition: all 1s ease;
         visibility: hidden;
-
-
     }
     .aligne_menu_prix:hover .rotate_icon{
   
@@ -329,26 +315,20 @@ li{
         border-radius: 25px;
         margin-bottom: 100px;
         margin-top: 25px;
-
     }
 
     .btn_commander:hover{
         background-image: linear-gradient(90deg, rgba(147,86,220,1) 0%,rgba(147,86,220,1) 100% );
         box-shadow: 0.5rem 0.5rem 10px rgb(0 0 0 / 25%);
         animation: all 2s ease forwards ;
-   
-
     }
 
 
 /* fin btn */
 
-
-
   /* Footer */
             
   footer{
-                
     margin-top: 30px;     
     background-color: #353535;
     color: white;
@@ -405,11 +385,25 @@ li{
     .footer_logo{
         font-size: 20px;
     }
+
+    /* description menu */
+
+    .aligne_menu{
+        display: 	flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aligne_menu_prix{
+        justify-content: space-between;
+        width: 90%;
+    }
+
+
+
+
+    /* fin description menu*/
 }
-  
-
-
-
 
 @keyframes rotate-icon {
     0%{
