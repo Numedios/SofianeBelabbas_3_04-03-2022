@@ -165,7 +165,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image:  linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
         color: white; 
         height: 35px ;
         width: 55%;
