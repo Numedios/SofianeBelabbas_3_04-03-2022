@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Shrikhand';
     src: url('shrikhand/Shrikhand-Regular.otf');
@@ -116,17 +115,19 @@ li{
 
     .aligne_menu{
         display: 	flex;
-       
+        justify-content: space-between;
+        align-content: space-between;
         flex-direction: row;
-       
-      justify-content: space-between;
+        width: 90%;
+        margin-left: 5%;
+      
     }
 
     .aligne_menu_prix{
         display: flex;
         justify-content: space-between;
         background-color: white;
-        width: 30%;
+        width: 23%;
         margin-bottom: 15px;
         border-radius: 15px;
         box-shadow: 0 0 7px #c1c1c1; /*  changer l'ombre*/
@@ -173,7 +174,7 @@ li{
         padding-bottom: 10px;
     }
  
-    #lol{ 
+    .box{ 
         display: flex;
         justify-content: space-between;
         width: 100%;
