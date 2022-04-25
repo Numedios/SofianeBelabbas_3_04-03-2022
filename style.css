@@ -38,11 +38,11 @@ li{
 
 
 main{
-    opacity: 1; /* changer a  0*/
+    opacity: 0;
     animation: main_opacity 4s ease 2s forwards;
     font-family: roboto;
 }
-/*
+
 @keyframes main_opacity {
     0%{
         opacity: 0;
@@ -51,10 +51,10 @@ main{
         opacity: 1;
     }
 }
-*/
+
 
 /* Loadeur*/
-/* reactivé
+
     .loadeur_animation{
         width: 70%;
         height: 5%;
@@ -77,7 +77,7 @@ main{
         animation: loadeur 1300ms ease-in-out forwards;
         
     }
-*/
+
 
 
     @keyframes loadeur {
