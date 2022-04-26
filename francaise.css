@@ -139,9 +139,9 @@ li{
 
 
     .description_menu{
-        font-family: 10px;
+        font-family: Roboto;
         padding: 16px;
-        font-style: Roboto;
+        font-style: 10px;
         overflow: hidden;       
     }
 
