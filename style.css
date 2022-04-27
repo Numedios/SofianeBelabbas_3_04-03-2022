@@ -154,7 +154,6 @@ main{
     .description_header > p{
         font-family: Roboto-Light;
         font-size: 20px;
-        font-weight: l00; /*  marche pas */ 
         margin-bottom: 20px;
         margin-top: 10px;
     }
@@ -263,7 +262,7 @@ main{
     .cartes_restaurants{
         display: flex;
         align-items: center;
-        background-color: c1c1c1;
+        background-color: #c1c1c1;
         height: 500px;
         flex-wrap: wrap;
         justify-content: space-around;
